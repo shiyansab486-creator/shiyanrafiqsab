@@ -12,42 +12,36 @@ const Achievements = () => {
       icon: Award,
       title: 'Digital Marketing Certification',
       issuer: 'Zephyr Technologi',
-      date: '2024',
       color: 'from-yellow-400 to-orange-500',
     },
     {
       icon: BookOpen,
       title: 'Advanced SEO Specialist',
       issuer: 'Industry Certification Board',
-      date: '2023',
       color: 'from-blue-400 to-cyan-500',
     },
     {
       icon: Zap,
       title: 'Google Ads Certified',
       issuer: 'Google',
-      date: '2024',
       color: 'from-red-400 to-pink-500',
     },
     {
       icon: Users,
       title: 'Social Media Mastery Badge',
       issuer: 'Meta Business Partner',
-      date: '2024',
       color: 'from-purple-400 to-pink-500',
     },
     {
       icon: Target,
       title: 'Content Marketing Expert',
       issuer: 'HubSpot Academy',
-      date: '2023',
       color: 'from-green-400 to-emerald-500',
     },
     {
       icon: Rocket,
       title: 'Startup Founder Badge',
       issuer: '3C Cloth Cleaning Centre',
-      date: '2024',
       color: 'from-cyan-400 to-blue-500',
     },
   ];
@@ -122,11 +116,7 @@ const Achievements = () => {
 
                 <p className="text-gray-400 text-sm mb-4">{achievement.issuer}</p>
 
-                <div className="mt-auto">
-                  <span className="inline-block px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-gray-300">
-                    {achievement.date}
-                  </span>
-                </div>
+               
 
                 <motion.div
                   className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${achievement.color} rounded-b-3xl`}
